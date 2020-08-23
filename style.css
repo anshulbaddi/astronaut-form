@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: 100 vw;
+    height: 100 vh;
+    background-image: url('https://i1.faceprep.in/ProGrad/sky-moon-bg.png');
+    background-size: 100%;
+
+}
+
+#astronaut1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 500px;
+    animation: floating 5s infinite ease-in;
+
+}
+
+#astronaut2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 425px;
+    animation: floating 5s infinite ease-in;
+
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+form {
+    color: palegreen;
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    width: 450px;
+    background-color: dimgray;
+    padding: 0px, 75px;
+    border-radius: 10px;
+
+}
+
+.block-display {
+    display: block;
+}
+
+label {
+    font-size: 16px;
+    margin: 20px 0px 4px 0px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 300px;
+    height: 40px;
+    border: 1px solid grey;
+    padding: 0 5px;
+
+}
+
+.rent-label {
+    margin-right: 20px;
+}
+
+#button {
+    display: block;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 40px auto;
+    color: dimgray;
+    border: none;
+    background-color: palegreen;
+
+}
